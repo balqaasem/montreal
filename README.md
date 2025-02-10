@@ -32,17 +32,17 @@ monorepo-starter has some additional tools already setup for you:
 
 To build all apps and packages, run the following command:
 
-bash```
+```bash
 bun build
-```
+````
 
 ### Develop
 
 To develop all apps and packages, run the following command:
 
-bash```
+```bash
 bun dev
-```
+````
 
 ### Remote Caching
 
