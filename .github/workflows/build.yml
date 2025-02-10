@@ -16,25 +16,12 @@ jobs:
       - name: Prepare repository
         run: git fetch --unshallow --tags
 
-      - name: Install bun
-        run: |
-          curl -fsSL https://bun.sh/install | bash
-          export PATH="$HOME/.bun/bin:$PATH"
-          bun --version
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Install dependencies
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
         run: bun install
-
-      - name: Build with bundle analysis
-        run: bun run analyze
-
-      - name: Upload bundle analysis artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: bundle-analysis
-          path: apps/**/.next/analyze/*.html
