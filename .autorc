@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "npm",
+    "first-time-contributor",
+    "released"
+  ],
+  "owner": "balqaasem",
+  "repo": "montreal",
+  "name": "Muhammad-Jibril B. Al-Sharif (Khalifa Al-Sharif)",
+  "email": "jbashir52@gmail.com"
+}
