@@ -1,6 +1,6 @@
-# monorepo-starter
+# Montréal
 
-Monorepo Starter Template
+Montreal is an open source production-ready SaaS monorepo boilerplate from A to Z.
 
 ## What's inside?
 
