@@ -24,13 +24,9 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
 
-      - name: Install bun
-        run: |
-          curl -fsSL https://bun.sh/install | bash
-          export PATH="$HOME/.bun/bin:$PATH"
-          bun --version
-
       - name: Install dependencies
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
         run: bun install
 
       - name: Build CLI
