@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
-        run: bun install
+      - run: bun install
 
       - name: Build CLI
         run: bun run tsup
