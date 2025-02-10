@@ -24,10 +24,11 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
 
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
+
       - name: Install dependencies
-      - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
-      - run: bun install
+        run: bun install
 
       - name: Build CLI
         run: bun run tsup
