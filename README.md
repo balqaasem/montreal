@@ -9,12 +9,12 @@ monorepo-starter includes the following packages/apps:
 ### Apps
 
 - `docs`: The Documentation site.
-- `landing`: The landing page.
-- `web`: The Web App
+- `app`: The Web App
+- `web`: The web page.
 
 ### Packages
 
-- `@repo/ui`: a stub React component library shared by the `landing`, `docs` and `web` applications
+- `@repo/ui`: a stub React component library shared by the `web`, `docs` and `app` applications
 - `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 

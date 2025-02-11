@@ -13,7 +13,7 @@ Structure of how project files are setup. Making changes to files should be in t
 | email     | The email preview server from react.email.                                 |
 | storybook | The storybook, which contains the storybook for the app.                   |
 | studio    | Prisma Studio, which is a graphical editor for the database.              |
-| web       | The website, featuring a twblocks template.                                |
+| web       | The web, featuring a twblocks template.                                |
 ```
 
 ## Nesting
