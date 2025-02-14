@@ -1,40 +1,35 @@
 {
-  "name": "montreal",
-  "version": "0.1.0",
-  "bin": {
-    "montreal": "dist/index.js"
-  },
-  "files": [
-    "dist/index.js"
-  ],
-  "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "test": "turbo test",
-    "bump-deps": "bunx npm-check-updates --deep -u -x react-day-picker && bun install",
-    "clean": "git clean -xdf node_modules"
-  },
-  "type": "module",
-  "devDependencies": {
-    "@auto-it/first-time-contributor": "^11.3.0",
-    "@biomejs/biome": "1.9.4",
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "@turbo/gen": "^2.3.3",
-    "@types/node": "^22.10.7",
-    "prettier": "^3.5.0",
-    "turbo": "^2.4.1",
-    "typescript": "5.7.3",
-    "vitest": "^3.0.3"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "bun@1.2.2",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+	"name": "montreal",
+	"version": "0.1.0",
+	"bin": {
+		"montreal": "dist/index.js"
+	},
+	"files": ["dist/index.js"],
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"lint": "turbo lint",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
+		"test": "turbo test",
+		"bump-deps": "bunx npm-check-updates --deep -u -x react-day-picker && bun install",
+		"clean": "git clean -xdf node_modules"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@auto-it/first-time-contributor": "^11.3.0",
+		"@biomejs/biome": "1.9.4",
+		"@repo/eslint-config": "*",
+		"@repo/typescript-config": "*",
+		"@turbo/gen": "^2.3.3",
+		"@types/node": "^22.10.7",
+		"prettier": "^3.5.0",
+		"turbo": "^2.4.1",
+		"typescript": "5.7.3",
+		"vitest": "^3.0.3"
+	},
+	"engines": {
+		"node": ">=18.17.0"
+	},
+	"packageManager": "bun@1.2.2",
+	"workspaces": ["apps/*", "packages/*"]
 }
