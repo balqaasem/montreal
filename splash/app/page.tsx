@@ -5,7 +5,6 @@ import { Features } from './components/features';
 import { Hero } from './components/hero';
 import { OpenSource } from './components/open-source';
 import { Review } from './components/review';
-import { Social } from './components/social';
 
 export const metadata: Metadata = {
   title: 'Production-grade Turborepo template for Next.js apps',
@@ -29,7 +28,7 @@ const Home = () => (
     <div className="h-8 bg-dashed" />
     <Features />
     <div className="h-8 bg-dashed" />
-    <Social />
+    {/* <Social /> */}
     <CallToAction />
   </>
 );

@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 
-import BaseHub from './basehub.svg';
 import BetterStack from './better-stack.svg';
 import Clerk from './clerk.svg';
 import GoogleAnalytics from './google-analytics.svg';
@@ -11,7 +10,6 @@ import Radix from './radix.svg';
 import ReactEmail from './react-email.svg';
 import Sentry from './sentry.svg';
 import Stripe from './stripe.svg';
-import Svix from './svix.svg';
 import Tailwind from './tailwind.svg';
 import TypeScript from './typescript.svg';
 
@@ -20,10 +18,8 @@ import Lucide from './lucide.svg';
 import Neon from './neon.svg';
 import React from './react.svg';
 import Ultracite from './ultracite.svg';
-import Vercel from './vercel.svg';
 
 import Cmdk from './cmdk.svg';
-import Liveblocks from './liveblocks.svg';
 import Posthog from './posthog.svg';
 import Recharts from './recharts.svg';
 import Resend from './resend.svg';
@@ -57,11 +53,6 @@ const rows = [
   {
     row: [
       {
-        label: 'BaseHub',
-        src: BaseHub,
-        className: '[animation-delay:-40s] [animation-duration:40s]',
-      },
-      {
         label: 'Google Analytics',
         src: GoogleAnalytics,
         className: '[animation-delay:-20s] [animation-duration:40s]',
@@ -94,11 +85,6 @@ const rows = [
         label: 'Arcjet',
         src: Arcjet,
         className: '[animation-delay:-22s] [animation-duration:40s]',
-      },
-      {
-        label: 'Liveblocks',
-        src: Liveblocks,
-        className: '[animation-delay:-28s] [animation-duration:40s]',
       },
     ],
   },
@@ -156,16 +142,6 @@ const rows = [
         label: 'TypeScript',
         src: TypeScript,
         className: '[animation-delay:-9s] [animation-duration:40s]',
-      },
-      {
-        label: 'Svix',
-        src: Svix,
-        className: '[animation-delay:-28s] [animation-duration:40s]',
-      },
-      {
-        label: 'Vercel',
-        src: Vercel,
-        className: '[animation-delay:-18s] [animation-duration:40s]',
       },
       {
         label: 'Zod',
