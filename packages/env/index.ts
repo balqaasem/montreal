@@ -19,8 +19,6 @@ const server: Parameters<typeof createEnv>[0]['server'] = {
   SENTRY_ORG: z.string().min(1).optional(),
   SENTRY_PROJECT: z.string().min(1).optional(),
 
-  // Added by Vercel
-  VERCEL: z.string().optional(),
   NEXT_RUNTIME: z.enum(['nodejs', 'edge']).optional(),
   FLAGS_SECRET: z.string().min(1),
 };
@@ -37,8 +35,7 @@ const client: Parameters<typeof createEnv>[0]['client'] = {
   NEXT_PUBLIC_POSTHOG_KEY: z.string().min(1).startsWith('phc_'),
   NEXT_PUBLIC_POSTHOG_HOST: z.string().min(1).url(),
 
-  // Added by Vercel
-  NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL: z.string().min(1).url(),
+  NEXT_PUBLIC_PRODUCTION_URL: z.string().min(1).url(),
 };
 
 export const env = createEnv({
@@ -59,7 +56,7 @@ export const env = createEnv({
     ANALYZE: process.env.ANALYZE,
     SENTRY_ORG: process.env.SENTRY_ORG,
     SENTRY_PROJECT: process.env.SENTRY_PROJECT,
-    VERCEL: process.env.VERCEL,
+    PRODUCTION: process.env.PRODUCTION,
     NEXT_RUNTIME: process.env.NEXT_RUNTIME,
     FLAGS_SECRET: process.env.FLAGS_SECRET,
     NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY:
@@ -76,7 +73,6 @@ export const env = createEnv({
     NEXT_PUBLIC_GA_MEASUREMENT_ID: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
     NEXT_PUBLIC_POSTHOG_KEY: process.env.NEXT_PUBLIC_POSTHOG_KEY,
     NEXT_PUBLIC_POSTHOG_HOST: process.env.NEXT_PUBLIC_POSTHOG_HOST,
-    NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL:
-      process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL,
+    NEXT_PUBLIC_PRODUCTION_URL: process.env.NEXT_PUBLIC_PRODUCTION_URL,
   },
 });

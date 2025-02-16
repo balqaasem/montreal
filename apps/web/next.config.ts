@@ -15,9 +15,8 @@ if (process.env.NODE_ENV === 'production') {
   ];
 
   nextConfig.redirects = redirects;
-}
 
-if (env.VERCEL) {
+  // Always enable Sentry in production
   nextConfig = withSentry(nextConfig);
 }
 

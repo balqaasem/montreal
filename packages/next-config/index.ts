@@ -8,6 +8,13 @@ import type { NextConfig } from 'next';
 import { createSecureHeaders } from 'next-secure-headers';
 
 export const config: NextConfig = {
+  transpilePackages: ['@content-collections/core', 'esbuild', '@repo/env'],
+  experimental: {
+    // Required for monorepo type resolution
+    typedRoutes: true,
+    externalDir: true,
+  },
+
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
@@ -64,14 +71,6 @@ export const config: NextConfig = {
 
   // This is required to support PostHog trailing slash API requests
   skipTrailingSlashRedirect: true,
-
-  // disable vercel caching
-  // experimental: {
-  //   incrementalCacheHandlerPath:
-  //     process.env.NODE_ENV === 'development'
-  //       ? require.resolve('./cache-handler.js')
-  //       : undefined,
-  // },
 };
 
 export const sentryConfig: Parameters<typeof withSentryConfig>[1] = {
