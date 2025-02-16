@@ -23,12 +23,11 @@ export const OpenSource = async () => {
         </div>
         <p className="font-semibold text-xl tracking-tight">
           Montreal currently has{' '}
-          <span className="text-orange-600">{data.stargazers_count}</span>{' '}
-          stars, <span className="text-orange-600">{data.forks_count}</span>{' '}
-          forks, and{' '}
-          <span className="text-orange-600">{data.open_issues_count}</span> open
+          <span className="text-[#45E6E6]">{data.stargazers_count}</span> stars,{' '}
+          <span className="text-[#45E6E6]">{data.forks_count}</span> forks, and{' '}
+          <span className="text-[#45E6E6]">{data.open_issues_count}</span> open
           issues and{' '}
-          <span className="text-orange-600">{contributors.length}</span>{' '}
+          <span className="text-[#45E6E6]">{contributors.length}</span>{' '}
           contributors.
         </p>
         <div className="-space-x-1 flex flex-row">
