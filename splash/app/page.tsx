@@ -4,7 +4,6 @@ import { CallToAction } from './components/cta';
 import { Features } from './components/features';
 import { Hero } from './components/hero';
 import { OpenSource } from './components/open-source';
-import { Review } from './components/review';
 
 export const metadata: Metadata = {
   title: 'Production-grade Turborepo template for Next.js apps',
@@ -16,9 +15,11 @@ const Home = () => (
   <>
     <Hero />
     <div className="grid divide-y sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+      {/*
       <div className="sm:col-span-2">
         <Review />
       </div>
+      */}
       <div className="sm:col-span-1">
         <OpenSource />
       </div>

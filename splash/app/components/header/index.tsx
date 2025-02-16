@@ -17,10 +17,10 @@ const links = [
     label: 'Features',
     href: '/#features',
   },
-  {
-    label: 'Community',
-    href: '/#community',
-  },
+  // {
+  //   label: 'Community',
+  //   href: '/#community',
+  // },
 ];
 
 export const Header = () => (

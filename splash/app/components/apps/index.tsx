@@ -1,5 +1,4 @@
 import {
-  BookIcon,
   CurlyBracesIcon,
   DatabaseIcon,
   GlobeIcon,
@@ -11,7 +10,6 @@ import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 import ApiImage from './api.png';
 import AppImage from './app.png';
-import DocsImage from './docs.png';
 import EmailImage from './email.png';
 import StorybookImage from './storybook.png';
 import StudioImage from './studio.png';
@@ -49,14 +47,6 @@ const apps = [
     description:
       'A twblocks website template with a type-safe blog, bulletproof SEO and legal pages, powered by BaseHub.',
     image: WebImage,
-  },
-  {
-    icon: BookIcon,
-    name: 'docs',
-    title: 'Stunning documentation',
-    description:
-      'Simple, beautiful out of the box and easy to maintain documentation. Pages are automatically generated from your markdown files.',
-    image: DocsImage,
   },
   {
     icon: DatabaseIcon,
