@@ -8,7 +8,7 @@ import type { NextConfig } from 'next';
 import { createSecureHeaders } from 'next-secure-headers';
 
 export const config: NextConfig = {
-  transpilePackages: ['@content-collections/core', 'esbuild', '@repo/env'],
+  transpilePackages: ['@content-collections/core', '@repo/env'],
   experimental: {
     // Required for monorepo type resolution
     typedRoutes: true,
