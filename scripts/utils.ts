@@ -12,8 +12,7 @@ export const execSyncOpts: ExecSyncOptions = { stdio: 'ignore' };
 
 export const internalContentDirs = [
   join('.github', 'workflows'),
-  'docs',
-  'splash',
+  'mount',
 ];
 
 export const internalContentFiles = [
