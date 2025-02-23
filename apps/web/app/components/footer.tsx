@@ -16,10 +16,6 @@ export const Footer = () => {
           title: 'Blog',
           href: '/blog',
         },
-        // {
-        //   title: 'Docs',
-        //   href: env.NEXT_PUBLIC_DOCS_URL,
-        // },
       ],
     },
     {
