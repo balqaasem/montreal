@@ -15,7 +15,7 @@ const server: Parameters<typeof createEnv>[0]['server'] = {
   ARCJET_KEY: z.string().min(1).startsWith('ajkey_'),
   ANALYZE: z.string().optional(),
 
-  // Added by Sentry Integration, Vercel Marketplace
+  // Added by Sentry Integration
   SENTRY_ORG: z.string().min(1).optional(),
   SENTRY_PROJECT: z.string().min(1).optional(),
 

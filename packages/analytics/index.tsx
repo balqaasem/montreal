@@ -11,7 +11,6 @@ type AnalyticsProviderProps = {
 export const AnalyticsProvider = ({ children }: AnalyticsProviderProps) => (
   <PostHogProvider>
     {children}
-    <VercelAnalytics />
     {env.NODE_ENV !== 'development' && (
       <GoogleAnalytics gaId={env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
     )}
